@@ -16,6 +16,7 @@ comprehensive_page = st.Page("comprehensive_dashboard.py", title="Analytics Dash
 components_page = st.Page("components_demo.py", title="UI Components", icon="🧩")
 dropdown_page = st.Page("dropdown_demo.py", title="Navigation Demo", icon="📋")
 drilldown_page = st.Page("drilldown_demo.py", title="Drilldown Demo", icon="🔍")
+duckdb_page = st.Page("duckdb_dashboard.py", title="DuckDB Dashboard", icon="🦆")
 
 # 🌍 Multi-Page Drilldown System
 multi_drilldown_page = st.Page("drilldown_multi_page.py", title="Multi-Page Drilldown", icon="🌍")
@@ -30,6 +31,7 @@ pg = st.navigation([
     components_page, 
     dropdown_page, 
     drilldown_page,
+    duckdb_page,
     multi_drilldown_page
 ], position="top")
 
