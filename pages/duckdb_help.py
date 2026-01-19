@@ -1,6 +1,10 @@
 import streamlit as st
 
-st.set_page_config(layout="wide")
+st.set_page_config(
+    layout="wide",
+    page_title="DuckDB Filtering Help",
+    page_icon="❓"
+)
 
 # Custom CSS
 st.markdown("""

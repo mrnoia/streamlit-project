@@ -182,10 +182,29 @@ def main():
     st.sidebar.markdown('<div class="sidebar-filter">', unsafe_allow_html=True)
     st.sidebar.markdown("### 🔍 Filters")
     
-    # Help link
+    # Help section
     with st.sidebar:
-        if st.button("❓ How Filtering Works", help="Learn about the filtering system"):
-            st.switch_page("duckdb_help.py")
+        with st.expander("❓ How Filtering Works", expanded=False):
+            st.markdown("""
+            **🎯 Quick Guide:**
+            
+            **1. Select Categories** → Products update automatically
+            **2. Choose Date Range** → Filter by time period  
+            **3. Pick Regions** → Geographic filtering
+            **4. Set Amount/Quantity** → Value ranges
+            **5. Click Apply** → All charts update instantly
+            
+            **💡 Pro Tips:**
+            - Start broad, then narrow down
+            - Use date ranges for trend analysis
+            - Combine filters for precise insights
+            
+            **🔧 How It Works:**
+            - Streamlit reruns page automatically
+            - DuckDB executes optimized SQL queries
+            - All visualizations update with your filters
+            - Memory usage shows ~2.5MB for full dataset
+            """)
     
     # Date range filter
     min_date = data_info[4].date()
