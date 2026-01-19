@@ -182,6 +182,11 @@ def main():
     st.sidebar.markdown('<div class="sidebar-filter">', unsafe_allow_html=True)
     st.sidebar.markdown("### 🔍 Filters")
     
+    # Help link
+    with st.sidebar:
+        if st.button("❓ How Filtering Works", help="Learn about the filtering system"):
+            st.switch_page("duckdb_help.py")
+    
     # Date range filter
     min_date = data_info[4].date()
     max_date = data_info[5].date()
