@@ -3,6 +3,7 @@ import streamlit as st
 # Define your pages - organized by categories
 # 📚 Learning & Tutorials
 showcase_page = st.Page("streamlit_showcase.py", title="Streamlit Tutorial", icon="📚")
+tutorial_page = st.Page("pages/dashboard_tutorial.py", title="Dashboard Tutorial", icon="🛠️")
 
 # 📊 Dashboards & Analytics
 tableau_page = st.Page("tableau_dashboard.py", title="Tableau Dashboard", icon="📈")
@@ -20,6 +21,7 @@ multi_drilldown_page = st.Page("drilldown_multi_page.py", title="Multi-Page Dril
 # Initialize navigation at top
 pg = st.navigation([
     showcase_page,
+    tutorial_page,
     tableau_page, 
     comprehensive_page,
     duckdb_page,
