@@ -162,7 +162,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 st.subheader("💻 Technical Implementation")
 
 st.markdown('<div class="code-example">', unsafe_allow_html=True)
-st.markdown("""
+st.markdown('''
 #### 🗄️ **DuckDB Connection Setup:**
 ```python
 @st.cache_resource
@@ -203,7 +203,7 @@ def build_where_clause(filters):
 # Execute with parameters
 filtered_data = conn.execute(query, params).fetchdf()
 ```
-""", unsafe_allow_html=True)
+''', unsafe_allow_html=True)
 st.markdown('</div>', unsafe_allow_html=True)
 
 # Tips and Best Practices
