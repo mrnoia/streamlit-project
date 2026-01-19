@@ -8,7 +8,6 @@ showcase_page = st.Page("streamlit_showcase.py", title="Streamlit Tutorial", ico
 tableau_page = st.Page("tableau_dashboard.py", title="Tableau Dashboard", icon="📈")
 comprehensive_page = st.Page("comprehensive_dashboard.py", title="Analytics Dashboard", icon="📉")
 duckdb_page = st.Page("duckdb_dashboard.py", title="DuckDB Dashboard", icon="🦆")
-duckdb_help_page = st.Page("duckdb_help.py", title="Filtering Help", icon="❓")
 
 # 🧩 Components & Features
 components_page = st.Page("components_demo.py", title="UI Components", icon="🧩")
@@ -24,7 +23,6 @@ pg = st.navigation([
     tableau_page, 
     comprehensive_page,
     duckdb_page,
-    duckdb_help_page,
     components_page, 
     dropdown_page, 
     drilldown_page,
