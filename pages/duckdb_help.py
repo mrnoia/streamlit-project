@@ -271,4 +271,4 @@ with col2:
 
 with col3:
     if st.button("🏠 Home"):
-        st.switch_page("../streamlit_showcase.py")
+        st.switch_page("streamlit_showcase.py")

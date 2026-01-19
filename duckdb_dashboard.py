@@ -185,7 +185,7 @@ def main():
     # Help link
     with st.sidebar:
         if st.button("❓ How Filtering Works", help="Learn about the filtering system"):
-            st.switch_page("pages/duckdb_help.py")
+            st.switch_page("duckdb_help.py")
     
     # Date range filter
     min_date = data_info[4].date()
